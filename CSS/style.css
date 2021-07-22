@@ -7,8 +7,13 @@ body {
   font-family: "Prompt", sans-serif;
 }
 
-a {
+#login-form a {
   text-decoration: none;
+  color: inherit;
+}
+
+#login-form a:hover {
+  text-decoration: underline;
 }
 
 .welcome-header {
@@ -43,9 +48,12 @@ a {
   height: 50px;
   border: none;
   font-size: 18px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
+}
+
+#login-form input:not([type="submit"]) {
   transition: all 350ms ease-in-out;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 #login-form input::placeholder {
@@ -53,5 +61,16 @@ a {
 }
 
 #login-form input:focus {
-  border-color: #fae100;
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 400ms ease;
+}
+
+#login-form input[type="submit"]:hover {
+  background-color: var(--yellow-hover);
 }
