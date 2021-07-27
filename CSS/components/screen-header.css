@@ -5,15 +5,12 @@
   padding: var(--horizontal-space);
   padding-top: 40px;
 }
-.screen-header__icons {
-  width: 100%;
+
+.screen-header__icons span:nth-child(n + 1) {
+  margin: 0px 15px;
 }
 
 .screen-header__title {
   font-size: 32px;
   font-weight: 600;
-}
-
-.fa-music {
-  margin: 0px 25px;
 }
