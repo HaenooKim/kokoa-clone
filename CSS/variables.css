@@ -2,4 +2,6 @@
   --yellow: #fae100;
   --yellow-hover: #e9d208;
   --horizontal-space: 30px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.2);
+  --half-gray: rgba(0, 0, 0, 0.5);
 }
