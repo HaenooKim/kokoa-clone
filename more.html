@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="CSS/style.css">
-  <title>chats screen</title>
+  <title>More screen</title>
 </head>
 <body>
   <!--status bar-->
@@ -27,42 +27,86 @@
 
   <!--header-->
   <header class="screen-header">
-    <h1 class="screen-header__title">Chats</h1>
+    <h1 class="screen-header__title">More</h1>
     <div class="screen-header__icons">
       <span>
         <i class="fas fa-search fa-lg"></i>
       </span>
       <span>
-        <i class="far fa-comment fa-lg"></i>
-      </span>
-      <span>
         <i class="fas fa-music fa-lg"></i>
       </span>
-      <span>
-        <a href="setting.html">
-          <i class="fas fa-cog fa-lg"></i>
-        </a>
+      <span class="cog">
+        <i class="fas fa-cog fa-lg"></i>
+        <span class="cog-dot"></span>
       </span>
     </div>
   </header>
 
-  <!--User-->
-  <main class="main-screen">
+  <!--main-->
+  <main class="main-screen more-screen">
     <div class="user-component">
       <div class="user-component__column">
-        <img class="user-component__avatar user-component__avatar-m" src="img/kokoaTalk.png" alt="#">
+        <img class="user-component__avatar user-component__avatar-m" src="img/profile.jpg" alt="#">
         <div class="user-component__text">
-          <h4 class="user-component__title">KokoaTalk</h4>
-          <h6 class="user-component__subtitle">Please check My Kakao Account info</h6>
+          <h4 class="user-component__title">HaenooKim</h4>
+          <h6 class="user-component__subtitle">+1 787-493-4219
+            <i class="fas fa-exclamation-circle"></i>
+          </h6>
         </div>
       </div>
-
       <div class="user-component__column user-component__column-time-notification">
-        <span class="user-component__column-time">21:22</span>
-        <span class="user-component__column-notification">1</span>
+        <i class="far fa-comment-alt fa-2x"></i>
+      </div>
+    </div>
+
+    <div class="icon-row">
+      <div class="icon-row__icon">
+        <i class="far fa-calendar-check"></i>
+        <span>Calendar</span>
       </div>
 
+      <div class="icon-row__icon">
+        <i class="fas fa-box"></i>
+        <span>Talk Drive</span>
+      </div>
+
+      <div class="icon-row__icon">
+        <i class="far fa-grin-beam"></i>
+        <span>Emoticons</span>
+      </div>
+
+      <div class="icon-row__icon">
+        <i class="fas fa-brush"></i>
+        <span>Themes</span>
+      </div>
+
+      <div class="icon-row__icon">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <span>Account</span>
+      </div>
+
+      <div class="icon-row__icon">
+        <i class="far fa-comments"></i>
+        <span>Open Chat</span>
+      </div>
     </div>
+
+    <div class="suggestions">
+      <h4 class="suggestions__title">Suggestions</h4>
+      <div class="suggestions__menu">
+        <div class="suggestions__menu-icon">
+          <img src="img/kakao-story.png" alt="">
+          <span>Kakao Story</span>
+        </div>
+        <div class="suggestions__menu-icon">
+          <img src="img/kakao-friends.jpg" alt="">
+          <span>Kakao friends</span>
+        </div>
+        <div class="suggestions__menu-icon">
+          <img src="img/freinds-gem.jpg" alt="">
+          <span>Friends Gem</span>
+        </div>
+      </div>
   </main>
 
   <!--nav bar-->
@@ -73,7 +117,7 @@
       </li>
       <li class="nav__btn">
         <span class="nav__btn__notification">1</span>
-        <a class="nav__link" href="chats.html"><i class="fas fa-comment fa-2x"></i></a>
+        <a class="nav__link" href="chats.html"><i class="far fa-comment fa-2x"></i></a>
       </li>
       <li class="nav__btn">
         <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
@@ -84,8 +128,5 @@
       </li>
     </ul>
   </nav>
-
-
-  
 </body>
 </html>
