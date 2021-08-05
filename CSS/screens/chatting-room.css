@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 1500vh;
+  height: 150vh;
 }
 
 #chat-screen .alt-header {
@@ -18,12 +18,24 @@
   z-index: 2;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .main-chat {
-  margin-top: 130px;
+  margin-top: 140px;
   /*timestamp를 중앙정렬하도록 하는 코드*/
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 1.2s ease-in;
 }
 
 .chat__timestamp {
@@ -37,11 +49,25 @@
   font-size: 14px;
 }
 
+@keyframes fadeInMessage {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .message-row {
   margin-top: 35px;
   /*widht:100%로 했기 때문에 align=itmes:center를 해도 중앙으로 오지 않음.*/
   width: 100%;
   display: flex;
+  opacity: 0;
+  animation: fadeInMessage 1s ease-in forwards;
+  animation-delay: 3s;
 }
 
 .message-row img {
@@ -81,8 +107,22 @@
   font-weight: 600;
 }
 
+@keyframes fadeInMessageOwn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .message-row-own {
   justify-content: flex-end;
+  animation: fadeInMessageOwn 1s ease forwards;
+  animation-delay: 4s;
 }
 
 .message__info-own {

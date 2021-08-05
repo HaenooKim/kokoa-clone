@@ -65,3 +65,7 @@
 #login-form input[type="submit"]:hover {
   background-color: var(--yellow-hover);
 }
+
+.welcome-header p {
+  width: 400px;
+}
