@@ -1,6 +1,7 @@
 #kokoa-clone coding
 
-## 사용기술 HTML, CSS
+## 사용기술 
+- HTML, CSS
 
 ## UI / UX
 ![로그인](https://user-images.githubusercontent.com/68438969/154720430-95ef76e7-9e4f-48f0-9bd4-f4dfc862a756.png)
