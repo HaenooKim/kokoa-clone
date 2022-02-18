@@ -1,4 +1,4 @@
-#kokoa-clone coding
+# KokoaTalk clone-coding
 
 ## 사용기술 
 - HTML, CSS
